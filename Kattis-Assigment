@@ -1,0 +1,29 @@
+using System;
+
+namespace Stuck_in_a_Time_Loop
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //Variables are declared
+            int count = 1;
+            int N = int.Parse(Console.ReadLine());
+ 
+            //The variable is limited through if-else; The count is started through the do - while
+            if (N >= 1 && N <= 100)
+            {
+                do
+                {
+                    Console.Write(count + " Abracadabra");
+                    Console.WriteLine();
+                    count = count + 1;
+                } while (count <= N);
+            }
+            else
+            {
+                Console.Write( "An integer between 1 and 100 must be entered!" );
+            }
+        }
+    }
+}
